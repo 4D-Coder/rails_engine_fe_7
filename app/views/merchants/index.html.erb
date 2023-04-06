@@ -1,0 +1,11 @@
+<body>
+  
+  <section id="merchant_index">
+    <h2>Merchants<h2>
+    <% @merchants.each do |m| %>
+      <div class="merchant">
+        <p class="name"><%= link_to "#{m.name}", merchant_path(m.id), id: m.id %></p>
+      </div>
+    <% end%>
+  </section>
+</body>
